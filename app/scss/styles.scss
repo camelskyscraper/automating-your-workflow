@@ -1,0 +1,28 @@
+@import 'sprites';
+@import 'testing';
+@import 'susy/sass/susy';
+
+@include retina-sprites($retina-groups);
+
+button,
+[type=submit] {
+  $bg-color: #753;
+
+  -webkit-appearance: none;
+  background: $bg-color;
+  border: 0;
+  border-radius: 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 20px;
+  transition: 0.3s background-color;
+
+  &:hover {
+    background: lighten($bg-color, 10%);
+  }
+}
+
+.susy-test {
+  @include span(2);
+}
