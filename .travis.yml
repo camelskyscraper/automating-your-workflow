@@ -5,7 +5,7 @@ install:
   - "npm install"
   - "npm install bower -g"
   - "bower install"
-  - "gem install scss_lint -v 2.0"
+  - "gem install scss-lint"
 script:
   - "gulp"
   - "gulp test"
